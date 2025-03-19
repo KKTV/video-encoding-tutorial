@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>視頻編碼教學 | 了解視頻播放的關鍵概念</title>
+    <meta name="description" content="探索視頻編碼的關鍵概念，包括快速播放原理、卡頓現象和幀類型與GOP結構。為軟件開發人員設計的教育資源。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">視頻編碼教學</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link active">首頁</a></li>
+                <li class="nav-item"><a href="pages/fast-playback.html" class="nav-link">快速播放原理</a></li>
+                <li class="nav-item"><a href="pages/stutter.html" class="nav-link">卡頓現象</a></li>
+                <li class="nav-item"><a href="pages/frame-types.html" class="nav-link">幀類型與GOP結構</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄區塊 -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="slide-in-bottom">視頻編碼的關鍵概念</h1>
+            <p class="slide-in-bottom">探索視頻播放背後的技術原理，了解快速播放、卡頓現象和幀類型結構如何影響視頻體驗</p>
+            <a href="#topics" class="btn btn-secondary slide-in-bottom">開始學習</a>
+        </div>
+    </header>
+
+    <!-- 主要內容 -->
+    <main class="container">
+        <section id="intro" class="section">
+            <div class="row">
+                <div class="col">
+                    <h2>關於本站</h2>
+                    <p>歡迎來到視頻編碼教學網站！本站專為初學者，特別是剛接觸視頻編碼的軟件開發人員設計。我們的目標是以簡明易懂的方式解釋視頻編碼和播放的關鍵概念。</p>
+                    <p>視頻編碼是一個複雜但引人入勝的領域，它結合了信號處理、壓縮算法和媒體技術。通過本站的內容，您將了解視頻播放速度調整的原理、卡頓現象的成因，以及不同幀類型如何組成視頻流。</p>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>為什麼了解視頻編碼很重要？</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>在當今的數字世界中，視頻已成為信息傳遞的主要媒介。作為開發人員，了解視頻編碼的基本原理可以幫助您：</p>
+                            <ul>
+                                <li>開發更高效的視頻播放器</li>
+                                <li>解決常見的視頻播放問題</li>
+                                <li>優化視頻處理算法</li>
+                                <li>提升用戶的視頻觀看體驗</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="topics" class="section">
+            <h2 class="text-center">探索主題</h2>
+            <p class="text-center mb-3">選擇一個主題開始您的學習之旅</p>
+            
+            <div class="topic-cards">
+                <!-- 快速播放原理卡片 -->
+                <div class="topic-card card hover-effect">
+                    <div class="card-body text-center">
+                        <div class="topic-card-icon">
+                            <i class="fas fa-forward"></i>
+                        </div>
+                        <h3>快速播放原理</h3>
+                        <p>了解視頻如何以不同速度播放的底層原理，以及加速播放時面臨的技術挑戰。</p>
+                        <p>探索幀選擇算法、音頻同步和播放速度調整的實現方法。</p>
+                        <a href="pages/fast-playback.html" class="btn btn-primary mt-2">了解更多</a>
+                    </div>
+                </div>
+                
+                <!-- 卡頓現象卡片 -->
+                <div class="topic-card card hover-effect">
+                    <div class="card-body text-center">
+                        <div class="topic-card-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>卡頓現象</h3>
+                        <p>探索視頻播放卡頓的原因和底層原理，特別是在高速播放時出現的不均勻或中斷播放問題。</p>
+                        <p>了解解碼延遲、幀依賴關係和系統資源限制如何影響流暢播放。</p>
+                        <a href="pages/stutter.html" class="btn btn-primary mt-2">了解更多</a>
+                    </div>
+                </div>
+                
+                <!-- 幀類型與GOP結構卡片 -->
+                <div class="topic-card card hover-effect">
+                    <div class="card-body text-center">
+                        <div class="topic-card-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>幀類型與GOP結構</h3>
+                        <p>深入了解不同幀類型（I幀、P幀、B幀等）在GOP中的角色和功能，以及它們如何影響視頻編碼。</p>
+                        <p>探索幀間依賴關係、壓縮效率和隨機訪問能力之間的平衡。</p>
+                        <a href="pages/frame-types.html" class="btn btn-primary mt-2">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="interactive" class="section">
+            <h2>互動學習體驗</h2>
+            <p>本網站提供多種互動元素，幫助您更直觀地理解視頻編碼概念：</p>
+            
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3><i class="fas fa-sliders-h"></i> 可調節演示</h3>
+                            <p>通過調整參數，觀察不同設置對視頻播放的影響。親自體驗播放速度變化、幀選擇策略和GOP結構的效果。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3><i class="fas fa-chart-line"></i> 視覺化圖表</h3>
+                            <p>通過動態圖表和視覺化展示，直觀理解複雜的視頻編碼概念。觀察幀之間的關係和數據流動。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>視頻編碼教學</h3>
+                    <p>為軟件開發人員提供的視頻編碼基礎知識</p>
+                </div>
+                <div class="col">
+                    <h3>快速導航</h3>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="pages/fast-playback.html">快速播放原理</a></li>
+                        <li><a href="pages/stutter.html">卡頓現象</a></li>
+                        <li><a href="pages/frame-types.html">幀類型與GOP結構</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>資源</h3>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Video_coding_format" target="_blank" rel="noopener noreferrer">視頻編碼格式 (Wikipedia)</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Group_of_pictures" target="_blank" rel="noopener noreferrer">GOP結構 (Wikipedia)</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Video_compression_picture_types" target="_blank" rel="noopener noreferrer">視頻壓縮幀類型 (Wikipedia)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2025 視頻編碼教學網站 | 使用HTML、CSS和JavaScript構建</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
