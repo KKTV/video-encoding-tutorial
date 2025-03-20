@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Ubuntu as the runner environment
+    
+    permissions:
+      contents: write  
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # use the newest version of checkout action
+        with:
+          fetch-depth: 0
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub 自動提供的 token
+          publish_dir: .  # 要發布的目錄，這裡是整個專案目錄
+          publish_branch: gh-pages  # 部署到 gh-pages 分支
+          force_orphan: true  # 將 gh-pages 分支作為孤立分支處理，只保留最新的部署
+          user_name: 'github-actions[bot]'  # 設置提交作者
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy to GitHub Pages'  # 自定義提交信息
+          full_commit_message: 'Deploy to GitHub Pages from ${{ github.sha }}'  # 完整的提交信息，包含觸發部署的提交 hash
